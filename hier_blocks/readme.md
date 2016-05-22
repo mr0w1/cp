@@ -2,7 +2,7 @@
 
 To save some room and make things look nicer I built the receiver demod chains as hier blocks.
 
-The easiest way to get these is to download the .grc file, open it, and then click the generate code button.
+The easiest way to get these is to download the .grc file, open it in GRC, and then click the generate code button.
 
 Next, hit the reload blocks button and you should see a new category "Custom" pop up.
 
