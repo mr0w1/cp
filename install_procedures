@@ -1,0 +1,40 @@
+Known to work on Xubuntu 15.10. Probably works on any Debian based distro.
+Some lines are may be redundant depending on your distro.
+Don't try to run the # comment lines.
+
+# update and upgrade!
+sudo apt-get update && apt-get upgrade
+
+# install gnuradio
+sudo apt-get install gnuradio-dev
+sudo apt-get install rtl-sdr
+sudo apt-get install gr-osmosdr
+
+# install dsd required libraries
+sudo apt-get install libsndfile1-dev
+sudo apt-get install libboost-all-dev
+sudo apt-get install libcppunit-dev
+sudo apt-get install liblog4cpp5-dev
+
+# install other required software
+sudo apt-get install swig
+sudo apt-get install cmake
+sudo apt-get install make
+sudo apt-get install git
+sudo apt-get install doxygen
+
+# download the gr-dsd source
+sudo git clone https://github.com/argilo/gr-dsd
+
+# switch to the gr-dsd folder, compile and install gr-dsd
+sudo cd gr-sds
+sudo cmake .
+sudo make
+sudo make install
+sudo ldconfig
+
+# if you want to do the install in two command lines instead of individually...
+sudo apt-get update && apt-get upgrade
+sudo apt-get install gnuradio-dev rtl-sdr gr-osmosdr libsndfile1-dev libboost-all-dev libcppunit-dev liblog4cpp5-dev swig cmake make git doxygen
+
+That should be all you need. If it worked, you'll see GRC installed and you'll see the DSD block is available for use.
