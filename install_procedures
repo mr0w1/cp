@@ -33,7 +33,8 @@ sudo make
 sudo make install
 sudo ldconfig
 
-# if you want to do the install in two command lines instead of individually...
+# If you want to do the install in two command lines instead of individually.
+# You'll still need to do the compile lines (30 - 34) individually after running line 38 and 39.
 sudo apt-get update && apt-get upgrade
 sudo apt-get install gnuradio-dev rtl-sdr gr-osmosdr libsndfile1-dev libboost-all-dev libcppunit-dev liblog4cpp5-dev swig cmake make git doxygen
 
