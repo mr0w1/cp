@@ -1,0 +1,19 @@
+<block>
+  <name>AM Chain</name>
+  <key>am_chain</key>
+  <category>Custom</category>
+  <import>from am_chain import am_chain  # grc-generated hier_block</import>
+  <make>am_chain()</make>
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+    <vlen>1</vlen>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>float</type>
+    <vlen>1</vlen>
+  </source>
+  <doc>/home/jason/.grc_gnuradio/am_chain.py</doc>
+  <grc_source>/home/jason/CP/am_chain.grc</grc_source>
+</block>
