@@ -38,4 +38,11 @@ sudo ldconfig
 sudo apt-get update && apt-get upgrade
 sudo apt-get install gnuradio-dev rtl-sdr gr-osmosdr libsndfile1-dev libboost-all-dev libcppunit-dev liblog4cpp5-dev swig cmake make git doxygen
 
+# B200 install notes: You'll need to install the UHD software. Some of this may be redundant as well. Afterwards you have to download the FPGA image.
+sudo apt-get install libgnuradio-uhd3.7.8
+sudo apt-get install uhd-host
+sudo apt-get install libuhd003
+sudo apt-get install libuhd-dev
+sudo uhd_images_downloader
+
 That should be all you need. If it worked, you'll see GRC installed and you'll see the DSD block is available for use.
