@@ -45,4 +45,4 @@ sudo apt-get install libuhd003
 sudo apt-get install libuhd-dev
 sudo uhd_images_downloader
 
-That should be all you need. If it worked, you'll see GRC installed and you'll see the DSD block is available for use.
+That should be all you need. If it worked, you'll see GRC installed and you'll see the DSD block is available for use. Be careful not to let the software update itself unless you know what you're doing. If the UHD software is compiled with version X of the software, and then it updates to version X+1, it won't work and you'll have to downgrade the UHD software to version X.
